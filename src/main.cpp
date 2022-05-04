@@ -31,8 +31,8 @@ Example contributor: Aswin
 #include <ESP8266WiFi.h>
 #include <MQTT.h>
 
-const char ssid[] = "ssid";
-const char pass[] = "pass";
+const char ssid[] = "WifiReSsid";
+const char pass[] = "E_RV{w4jz<F{";
 
 WiFiClient net;
 MQTTClient client;

@@ -96,7 +96,7 @@ void setup()
     aes128.setKey(key,16);// Setting Key for AES
 
     Serial.print("Before Encryption:");
-    for(int i=0; i<sizeof(plaintext); i++)
+    for(unsigned int i=0; i<sizeof(plaintext); i++)
     {
         Serial.write(plaintext[i]);
     }
@@ -104,7 +104,7 @@ void setup()
     aes128.encryptBlock(cypher,plaintext);//cypher->output block and plaintext->input block
     Serial.println();
     Serial.print("After Encryption:");
-    for(int j=0; j<sizeof(cypher); j++)
+    for(unsigned int j=0; j<sizeof(cypher); j++)
     {
         Serial.write(cypher[j]);
     }
@@ -113,7 +113,7 @@ void setup()
 
     Serial.println();
     Serial.print("After Dencryption:");
-    for(int i=0; i<sizeof(decryptedtext); i++)
+    for(unsigned int i=0; i<sizeof(decryptedtext); i++)
     {
         Serial.write(decryptedtext[i]);
     }
